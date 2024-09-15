@@ -1,23 +1,48 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人网站</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personal Homepage</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#about">关于我</a></li>
-            <li><a href="#publications">发表</a></li>
-            <li><a href="#honors">荣誉</a></li>
-            <li><a href="#research">研究</a></li>
-            <li><a href="#artworks">艺术作品</a></li>
-        </ul>
-    </nav>
-
     <header>
-        <h1>欢迎来到我的个人网站</h1>
-        <img src="your-photo.jpg" alt="我的照片">
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">RESEARCH</a></li>
+                <li><a href="#">PUBLICATION</a></li>
+                <li><a href="#">HONORS</a></li>
+                <li><a href="#">SKILL</a></li>
+                <li><a href="#">ARTWORK</a></li>
+            </ul>
+        </nav>
     </header>
+
+    <section class="profile">
+        <img src="your-photo.jpg" alt="Profile Photo" class="profile-photo">
+        <div class="intro">
+            <h1>Your Name</h1>
+            <p>Brief introduction about yourself. You can write about your career, interests, and expertise.</p>
+        </div>
+    </section>
+
+    <section class="video-section">
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/sample_video1" frameborder="0" allowfullscreen></iframe>
+            <p class="italic-comment">This is the first embedded video with a comment in italics.</p>
+        </div>
+
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/sample_video2" frameborder="0" allowfullscreen></iframe>
+            <p class="italic-comment">This is the second embedded video with another comment in italics.</p>
+        </div>
+    </section>
+
+    <canvas id="bgCanvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
