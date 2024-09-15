@@ -46,12 +46,13 @@ nav ul li a {
 }
 
 .profile-photo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    width: 200px; /* 修改为长方形宽度 */
+    height: 300px; /* 修改为长方形高度 */
+    border-radius: 20px; /* 圆角设置为20px，适用于四个角 */
     margin-right: 20px;
-    border: 3px solid #ffffff;
-}
+    border: 3px solid #00ff00;
+    object-fit: cover; /* 保持图片比例 */
+   }
 
 .intro {
     max-width: 600px;
